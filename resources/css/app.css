@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none;
+}
+.homepage {
+    overflow: hidden;
+  }
+  /* Styling untuk Header di Homepage */
+  .homepage .header-box h1 {
+      font-size: 3.0rem;
+      font-weight: 500;
+      color: var(--color-text);
+  }
+  
+  .homepage .header-box h1 span {
+      font-weight: 700%;
+      font-family: "Comic Sans MS", Times, serif;
+      
+  }
+  
+  .homepage .header-box p {
+      line-height: 2;
+      color: var(--color-text);
+      font-weight: 500;
+  }
+  
+  .homepage .header-box img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 56% 44% 42% 58% / 45% 49% 51% 55%; /* Memastikan border-radius sesuai dengan container */
+  }
+  
+  .kata {
+    font-family: "Comic Sans MS", Times, serif;
+    font-size: 15px;
+  }
+  .split-text {
+    color: #000000; /* First color */
+    font-style: italic;
+  }
+  
+  
+  .split-text3 {
+    color:  #f18bbe;
+    ; /* Second color */
+  }
+  
+  
+  .btn-pink {
+    background-color: #ff69b4; /* Pink color */
+    color: #fff; /* White text */
+    border: 2px solid #ff69b4; /* Pink border */
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+  
+  }
+  
+  .btn-pink:hover {
+    background-color: #ff4e9f; /* Darker pink on hover */
+    border: 1px solid #ff4e9f; /* Darker pink border on hover */
+  }
+  
+  .black-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black; /* Warna border hitam */
+    background-color: transparent; /* Latar belakang transparan */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi */
+    border-radius: 50px;
+    margin-top: 30px;
+  
+  }
+  
+  /* Saat dihover, ganti background menjadi putih */
+  .black-button:hover {
+    background-color: white; /* Latar belakang putih saat dihover */
+    color: black; /* Warna teks hitam saat dihover */
+  }
+  
+  .image {
+    animation: rotate 8s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  /* Media query untuk responsivitas */
+  @media (max-width: 768px) {
+    .homepage .header-box img {
+      width: 10%; /* Gambar memenuhi lebar layar pada layar kecil */
+    }
+  
+  }
+  /* Menambahkan aturan animasi */
+  @keyframes rotateImage {
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  
+  /* Media Queries untuk Header Responsif */
+  @media screen and (max-width: 992px) {
+      .homepage .header-box {
+          padding-top: 8rem;
+      }
+  
+      .homepage .header-box img {
+          width: 400px;
+          display: block;
+          margin: 0 auto;
+      }
+  }
+  
+  @media screen and (max-width: 575px) {
+      .homepage .header-box h1 {
+          font-size: 3rem;
+      }
+  }
+  
+  @media screen and (max-width: 475px) {
+      .homepage .header-box h1 {
+          font-size: 2.4rem;
+      }
+  
+      .homepage .header-box p {
+          font-size: 14px;
+      }
+  
+      .homepage .header-box img {
+          width: 300px;
+      }
+  }
+  
+  @media screen and (max-width: 375px) {
+      .homepage .header-box h1 {
+          font-size: 2rem;
+      }
+  
+      .homepage .header-box p {
+          font-size: 12px;
+      }
+  }
